@@ -1,0 +1,75 @@
+There are rules to help people distinguish dots from dashes in Morse code.
+
+The length of a dot is 1 time unit.
+
+A dash is 3 time units.
+
+The space between symbols (dots and dashes) of the same letter is 1 time unit.
+
+The space between letters is 3 time units.
+
+The space between words is 7 time units.
+
+A .-
+
+B -...
+
+C -.-.
+
+D -..
+
+E .
+
+F ..-.
+
+G --.
+
+H ....
+
+I ..
+
+J .---
+
+K -.-
+
+L .-..
+
+M --
+
+N -.
+
+O ---
+
+P .--.
+
+Q --.-
+
+R .-.
+
+S ...
+
+T -
+
+U ..-
+
+V ...-
+
+W .--
+
+X -..-
+
+Y -.--
+
+Z --..
+
+1 .----
+2 ..---
+3 ...--
+4 ....-
+5 .....
+6 -....
+7 --...
+8 ---..
+9 ----.
+0 -----
+
