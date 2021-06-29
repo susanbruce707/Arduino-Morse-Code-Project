@@ -23,10 +23,9 @@ char Letters[] = "  SEEK FIRST THE KINGDOM OF GOD AND HIS RIGHTEOUSNESS  "
 const int sounder_A = 8;
 const int sounder_B = 9;
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(sounder_A, OUTPUT); //connect the piezo across two ports
+  pinMode(sounder_A, OUTPUT); //connect the piezo or small speaker across two ports,
   pinMode(sounder_B, OUTPUT); //to double the signal amplitude.
-  pinMode(12, OUTPUT); // initialize digital pin 12 as an output
+  pinMode(12, OUTPUT); // pin 12 is used to flash LED.
 }
 // Call function with parameters - duration in mSecs, freq in Hz
 void beep(long duration, int freq) {
@@ -47,12 +46,11 @@ void beep(long duration, int freq) {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   Serial.begin(9600);
   delay(3000);
   Send_SOS();
   delay(5000);
-  for (int i = 0; i < sizeof(Letters) - 1; i++){
+  for (int i = 0; i < sizeof(Letters) - 1; i++){  // Switch case filter to select correct output for character in Letters.
     Serial.print(Letters[i]);  // prints output to serial monitor.
     switch (Letters[i]) {
       case 'A':  // A .-
